@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lake Park School District</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Merriweather:wght@700&family=Sintony:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!------------------------------------------------------------------- Main Nav -->
+    <nav class="main-navbar" aria-label="Main Nav" id="top">
+      <!------------------------------------------- Destop Menu -->
+      <div class="main-nav">
+        <div class="main-nav-links" aria-label="Main Nav Links">
+          <div>
+            <a class="main-nav-links--link" href="#">Home</a>
+          </div>
+          <div>
+            <a
+              class="main-nav-links--link about-us-link"
+              id="aboutUsLink"
+              href="#"
+              >About Us
+            </a>
+            <div class="main-nav-links__sub-menu" id="aboutUsSubMenu">
+              <div class="shadow-menu-about-us">
+                <a class="main-nav-links__sub-menu__link" href="#"
+                  >General Information</a
+                >
+                <a class="main-nav-links__sub-menu__link" href="#"
+                  >Lake Park History</a
+                >
+                <a class="main-nav-links__sub-menu__link" href="#"
+                  >In the News</a
+                >
+                <a class="main-nav-links__sub-menu__link" href="#"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+          <div><a class="main-nav-links--link" href="#">Departments</a></div>
+          <div><a class="main-nav-links--link" href="#">Programs</a></div>
+          <div><a class="main-nav-links--link" href="#">Board</a></div>
+          <div><a class="main-nav-links--link" href="#">Families</a></div>
+          <div><a class="main-nav-links--link" href="#">Staff</a></div>
+        </div>
+      </div>
+
+      <!-------------------------------------------- Mobile Menu -->
+
+      <div class="mobile-menu">
+        <img
+          class="hamburger-icon"
+          id="menuOpen"
+          src="./images/Hamburger Menu.svg"
+          alt="Open Menu"
+        />
+        <p class="mobile-menu-text">menu</p>
+      </div>
+
+      <!------------------------------ Right Nav -->
+      <div class="main-nav-links-right" aria-label="School Nav">
+        <div class="schools-link">
+          <div class="main-nav-links-right__schools" id="schoolsLink">
+            <svg
+              id="eLGQwNlx7tO1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 11.792 7.917"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+            >
+              <path
+                d="M2.646,5.881C4.264,7.233,5.847,8.542,7.4,9.868c.237766.216685.404693.500009.479.813.085037.410818-.134169.824033-.522.984-.373876.210121-.840654.154754-1.155-.137L2.791,8.687L0.462,6.736c-.288357-.18907-.462064-.510685-.462064-.8555s.173707-.66643.462064-.8555C2.346,3.459,4.221,1.884,6.12,0.335c.229893-.182686.505626-.298584.797-.335.429626-.019088.817309.256122.941.668.148201.415309.009252.87874-.343,1.144C6.3,2.834,5.087,3.844,3.869,4.862Z"
+                transform="matrix(0 1-1 0 11.791068 0.000001)"
+              />
+            </svg>
+            Schools
+            <div class="main-nav-links-right__schools__sub-menu">
+              <div class="shadow-school-sub-menu">
+                <ul class="main-nav-links-right__schools__sub-menu__links">
+                  <a
+                    href="#"
+                    class="main-nav-links-right__schools__sub-menu__links__link"
+                  >
+                    <li>Lake Park Elementry</li>
+                  </a>
+                  <a
+                    href="#"
+                    class="main-nav-links-right__schools__sub-menu__links__link"
+                  >
+                    <li>Lake Park Middle School</li>
+                  </a>
+                  <a
+                    href="#"
+                    class="main-nav-links-right__schools__sub-menu__links__link"
+                  >
+                    <li>Lake Park High School</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-link" id="searchLink">
+          <a href="#" class="main-nav-links-right__search">
+              <img
+                class="search-icon"
+                id="searchIcon"
+                src="./images/Search Icons/Magnifying Glass.svg"
+                alt="search"
+              />
+              <img
+                id="closeIcon"
+                class="search-close-icon"
+                src="./images/Search Icons/X - Close.svg"
+                alt="close menu"
+              />
+          </a>
+          <div
+            id="searchSubMenu"
+            class="main-nav-links-right__search__sub-menu"
+          >
+            <div class="shadow">
+              <input
+                class="main-nav-links-right__search__sub-menu--input"
+                type="text"
+                placeholder="Search..."
+              />
+              <a class="main-nav-links-right__search__sub-menu--arrow" href="#">
+                <img src="./images/Search Icons/Arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--------------------------------------------------------- Hero Section -->
+    <section class="hero" id="heroSection">
+      <header class="hero--header">
+        <div class="hero--header__right">
+          <div href="#" class="hero--header__right__logo">
+            <img class="hero-logo" src="./images/logo.png" alt="logo" />
+            <div class="hero--header__right__logo__text">
+              <h1 class="hero--header__right__logo--top-text">
+                Lake Park School District
+              </h1>
+              <p class="hero--header__right__logo--bottom-text">
+                Let's Advance Learning
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero--header__left">
+          <a href="#"
+            ><img
+              class="envelope-icon"
+              src="./images/Global Icons/Envelope 5.svg"
+              alt=""
+            />Contact Us</a
+          >
+          <a href="#"
+            ><img
+              class="bus-icon"
+              src="./images/Global Icons/Bus.svg"
+              alt=""
+            />Bus Routes</a
+          >
+          <a href="#"
+            ><img
+              class="calendar-icon"
+              src="./images/Global Icons/Calendar 6.svg"
+              alt=""
+            />Events</a
+          >
+        </div>
+      </header>
+      <!-------------------------------------------- Carousel -->
+      <div class="carousel">
+        <div class="hero--carousel hero--carousel-absolute">
+          <img class="carsousel-image" src="./images/Main Image@2x.png" alt="" />
+          <img class="carsousel-image" src="./images/Soccer image@2x.png" alt="" />
+          <img class="carsousel-image" src="./images/Main Image@2x.png" alt="" />
+          <img class="carsousel-image" src="./images/Soccer image@2x.png" alt="" />
+          <div class="carousel--controls">
+            <div id="prevSlide" class="carousel--controls__button carousel-arrow left-arrow" onclick="NextSlide(-1)">
+              <svg
+                class="controls-arrow"
+                id="eLGQwNlx7tO1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 11.792 7.917"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+              >
+                <path
+                  d="M2.646,5.881C4.264,7.233,5.847,8.542,7.4,9.868c.237766.216685.404693.500009.479.813.085037.410818-.134169.824033-.522.984-.373876.210121-.840654.154754-1.155-.137L2.791,8.687L0.462,6.736c-.288357-.18907-.462064-.510685-.462064-.8555s.173707-.66643.462064-.8555C2.346,3.459,4.221,1.884,6.12,0.335c.229893-.182686.505626-.298584.797-.335.429626-.019088.817309.256122.941.668.148201.415309.009252.87874-.343,1.144C6.3,2.834,5.087,3.844,3.869,4.862Z"
+                  transform="matrix(0 1-1 0 11.791068 0.000001)"
+                />
+              </svg>
+              <div class="control-button--after">
+                <svg
+                  class="controls-arrow"
+                  id="eLGQwNlx7tO1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 11.792 7.917"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                >
+                  <path
+                    d="M2.646,5.881C4.264,7.233,5.847,8.542,7.4,9.868c.237766.216685.404693.500009.479.813.085037.410818-.134169.824033-.522.984-.373876.210121-.840654.154754-1.155-.137L2.791,8.687L0.462,6.736c-.288357-.18907-.462064-.510685-.462064-.8555s.173707-.66643.462064-.8555C2.346,3.459,4.221,1.884,6.12,0.335c.229893-.182686.505626-.298584.797-.335.429626-.019088.817309.256122.941.668.148201.415309.009252.87874-.343,1.144C6.3,2.834,5.087,3.844,3.869,4.862Z"
+                    transform="matrix(0 1-1 0 11.791068 0.000001)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div id="pausePlay" class="carousel--controls__button carousel-pause" onclick="PausePlay()">
+              <svg
+                class="controls-play"
+                id="eSByXqPVGNR1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 8.647 13.564"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+              >
+                <g clip-path="url(#eSByXqPVGNR6)">
+                  <g>
+                    <path
+                      d="M1.255,13.531v0c-.332847,0-.652061-.132223-.887419-.367581s-.367581-.554572-.367581-.887419L0,1.222c-.012979-.462765.226489-.896043.625232-1.131254s.893793-.23521,1.292536,0s.638211.668489.625232,1.131254v11.054c.000124.338822-.136755.663299-.379519.89966s-.570783.364519-.909481.35534"
+                      transform="translate(0 0.033)"
+                    />
+                    <path
+                      d="M19.355,13.531v0c-.693117,0-1.255-.561883-1.255-1.255v-11.054c-.012979-.462765.226489-.896043.625232-1.131254s.893793-.23521,1.292536,0s.638211.668489.625232,1.131254v11.054c.000124.338822-.136755.663299-.379519.89966s-.570783.364519-.909481.35534"
+                      transform="translate(-11.962 0.033)"
+                    />
+                  </g>
+                  <clipPath id="eSByXqPVGNR6">
+                    <rect
+                      width="8.647"
+                      height="13.564"
+                      rx="0"
+                      ry="0"
+                      fill="#ffffff"
+                    />
+                  </clipPath>
+                </g>
+              </svg>
+              <div class="control-button--after">
+                <svg
+                  class="controls-play"
+                  id="eSByXqPVGNR1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 8.647 13.564"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                >
+                  <g clip-path="url(#eSByXqPVGNR6)">
+                    <g>
+                      <path
+                        d="M1.255,13.531v0c-.332847,0-.652061-.132223-.887419-.367581s-.367581-.554572-.367581-.887419L0,1.222c-.012979-.462765.226489-.896043.625232-1.131254s.893793-.23521,1.292536,0s.638211.668489.625232,1.131254v11.054c.000124.338822-.136755.663299-.379519.89966s-.570783.364519-.909481.35534"
+                        transform="translate(0 0.033)"
+                      />
+                      <path
+                        d="M19.355,13.531v0c-.693117,0-1.255-.561883-1.255-1.255v-11.054c-.012979-.462765.226489-.896043.625232-1.131254s.893793-.23521,1.292536,0s.638211.668489.625232,1.131254v11.054c.000124.338822-.136755.663299-.379519.89966s-.570783.364519-.909481.35534"
+                        transform="translate(-11.962 0.033)"
+                      />
+                    </g>
+                    <clipPath id="eSByXqPVGNR6">
+                      <rect
+                        width="8.647"
+                        height="13.564"
+                        rx="0"
+                        ry="0"
+                        fill="#ffffff"
+                      />
+                    </clipPath>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div id="nextSlide" class="carousel--controls__button carousel-arrow right-arrow" onclick="NextSlide(1)">
+              <svg
+                class="controls-arrow"
+                id="eLGQwNlx7tO1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 11.792 7.917"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+              >
+                <path
+                  d="M2.646,5.881C4.264,7.233,5.847,8.542,7.4,9.868c.237766.216685.404693.500009.479.813.085037.410818-.134169.824033-.522.984-.373876.210121-.840654.154754-1.155-.137L2.791,8.687L0.462,6.736c-.288357-.18907-.462064-.510685-.462064-.8555s.173707-.66643.462064-.8555C2.346,3.459,4.221,1.884,6.12,0.335c.229893-.182686.505626-.298584.797-.335.429626-.019088.817309.256122.941.668.148201.415309.009252.87874-.343,1.144C6.3,2.834,5.087,3.844,3.869,4.862Z"
+                  transform="matrix(0 1-1 0 11.791068 0.000001)"
+                />
+              </svg>
+              <div class="control-button--after">
+                <svg
+                  class="controls-arrow"
+                  id="eLGQwNlx7tO1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 11.792 7.917"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                >
+                  <path
+                    d="M2.646,5.881C4.264,7.233,5.847,8.542,7.4,9.868c.237766.216685.404693.500009.479.813.085037.410818-.134169.824033-.522.984-.373876.210121-.840654.154754-1.155-.137L2.791,8.687L0.462,6.736c-.288357-.18907-.462064-.510685-.462064-.8555s.173707-.66643.462064-.8555C2.346,3.459,4.221,1.884,6.12,0.335c.229893-.182686.505626-.298584.797-.335.429626-.019088.817309.256122.941.668.148201.415309.009252.87874-.343,1.144C6.3,2.834,5.087,3.844,3.869,4.862Z"
+                    transform="matrix(0 1-1 0 11.791068 0.000001)"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel--hero">
+          <h2>Welcome to Our Site!</h2>
+          <p>
+            Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper
+            venenatis torquent parturient condimentum facilisis diam lacinia.
+          </p>
+          <a href="#" class="carousel--hero__button btn">learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------- Current News Section -->
+    <section class="current-news" id="currentNews">
+      <header class="current-news--header">
+        <h2 class="current-news--title">Current News</h2>
+        <a href="#" class="current-news--more-button btn">more</a>
+      </header>
+      <div class="cards-grid grid">
+        <article class="card">
+          <div class="img-container">
+            <img
+              class="cards-grid__img"
+              src="./images/Cards/Books.png"
+              alt="stacked books"
+            />
+          </div>
+          <h3 class="cards-grid__title">Student Book Fair</h3>
+          <p class="cards-grid__description">
+            Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper
+            venenatis torquent parturient condimentum facilisis diam lacinia.
+          </p>
+        </article>
+        <article class="card">
+          <div class="img-container">
+            <img
+              class="cards-grid__img"
+              src="./images/Cards/Student with Laptop.png"
+              alt="student on laptop"
+            />
+          </div>
+          <h3 class="cards-grid__title">Personalized Learning</h3>
+          <p class="cards-grid__description">
+            Venenatis feugiat velit blandit aliquam nullam lectus odio a ut
+            suspendisse ullamcorper parturient nascetur lobortis.
+          </p>
+        </article>
+        <article class="card">
+          <div class="img-container">
+            <img
+              class="cards-grid__img"
+              src="./images/Cards/Bus.png"
+              alt="school bus"
+            />
+          </div>
+          <h3 class="cards-grid__title">Bus Safety Month</h3>
+          <p class="cards-grid__description">
+            Leo aenean elementum senectus ut tincidunt conubia nec a metus
+            parturient volutpat venenatis.
+          </p>
+        </article>
+        <article class="card">
+          <div class="img-container">
+            <img
+              class="cards-grid__img"
+              src="./images/Cards/High School Student.png"
+              alt="high school student"
+            />
+          </div>
+          <h3 class="cards-grid__title">After School Tutoring</h3>
+          <p class="cards-grid__description">
+            Ad dapibus parturient consectetur nec aptent aenean metus
+            ullamcorper et nisi pulvinar lectus nisi suscipit pulvinar
+            vestibulum malesuada.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------- More Info Section -->
+    <section class="more-info">
+      <article class="more-info--announcements">
+        <h2 class="more-info--announcements__title">Announcements</h2>
+        <p>
+          Lacinia interdum hac luctus suspendisse odio ridiculus blandit
+          suspendisse vestibulum montes ad condimentum mus metus scelerisque a
+          vestibulum lobortis potenti condimentum scelerisque pulvinar.
+        </p>
+        <p>
+          Tellus proin elit litora nisi a varius lacus ullamcorper placerat
+          ridiculus sit eros id dignissim a aliquet.
+        </p>
+        <p>
+          Augue sodales ullamcorper facilisis elit vestibulum adipiscing a
+          laoreet eros vestibulum ut vivamus a turpis justo in vestibulum
+          phasellus et odio sed ad leo.
+        </p>
+        <a href="#" class="more-info--annoucements__button btn">more</a>
+      </article>
+      <article class="more-info--site-shortcuts">
+        <h2 class="more-info--site-shortcuts__title">Site Shortcuts</h2>
+        <a href="#" class="more-info--site-shortcuts__link">Tip Line</a>
+        <a href="#" class="more-info--site-shortcuts__link"
+          >Stay Informed - Weekly e-Newsletter</a
+        >
+        <a href="#" class="more-info--site-shortcuts__link"
+          >Volunteer Opportunities</a
+        >
+        <a href="#" class="more-info--site-shortcuts__link">Report Bullying</a>
+        <a href="#" class="more-info--site-shortcuts__link"
+          >Child Find - Information About Special Education Services</a
+        >
+        <a href="" class="more-info--site-shortcuts__link"
+          >System of Great Schools Information</a
+        >
+      </article>
+    </section>
+
+    <!------------------------------------------------------------------- Footer -->
+    <footer class="footer">
+      <div class="footer--top-line">
+        <address class="address">
+          <a href="https://goo.gl/maps/KxYe6GhZ2nCx2vLL7" target="blank"
+            >3395 Harrison Avenue<span class="address-comma">,</span> Beaumont,
+            TX 77706</a
+          >
+        </address>
+        <p class="phone">Phone: 409-617-5000</p>
+      </div>
+      <div class="footer--mid-line">
+        <a class="site-map-button btn" href="#">Site Map</a>
+        <a class="top-button btn" href="#top"
+          ><svg
+            id="eLGQwNlx7tO1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 11.792 7.917"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+          >
+            <path
+              d="M2.646,5.881C4.264,7.233,5.847,8.542,7.4,9.868c.237766.216685.404693.500009.479.813.085037.410818-.134169.824033-.522.984-.373876.210121-.840654.154754-1.155-.137L2.791,8.687L0.462,6.736c-.288357-.18907-.462064-.510685-.462064-.8555s.173707-.66643.462064-.8555C2.346,3.459,4.221,1.884,6.12,0.335c.229893-.182686.505626-.298584.797-.335.429626-.019088.817309.256122.941.668.148201.415309.009252.87874-.343,1.144C6.3,2.834,5.087,3.844,3.869,4.862Z"
+              transform="matrix(0 1-1 0 11.791068 0.000001)"
+            /></svg
+          >Back to Top</a
+        >
+      </div>
+      <nav class="footer--nav" aria-label="Nav Bottom">
+        <ul class="footer--nav__nav-links">
+          <a href="#" class="footer--nav__nav-links--link"
+            ><li>Accreditation</li></a
+          >
+          <a href="#" class="footer--nav__nav-links--link"
+            ><li>Non-Discrimination Policy</li></a
+          >
+          <a href="#" class="footer--nav__nav-links--link"
+            ><li>Newsletter</li></a
+          >
+          <a href="#" class="footer--nav__nav-links--link last-link"
+            ><li>Contact Us</li></a
+          >
+        </ul>
+      </nav>
+      <div class="footer--social">
+        <h2 class="footer--social__title">Follow Us</h2>
+        <a href="#" class="social-icon social-icon-facebook"
+          ><img
+            class="facebook-icon social-icon"
+            src="./images/Social Media/Facebook.svg"
+            alt="Facebook"
+          /><span class="facebook-span">Facebook</span></a
+        >
+        <a href="#" class="social-icon social-icon-twitter"
+          ><img
+            class="twitter-icon"
+            src="./images/Social Media/Twitter.svg"
+            alt="Twitter"
+          /><span class="twitter-span">Twitter</span></a
+        >
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/App.js"></script>
+  </body>
+</html>
