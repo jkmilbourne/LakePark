@@ -536,7 +536,7 @@ body {
 .hero--carousel {
   width: 100%;
   max-width: 66.9375rem;
-  min-width: 66%;
+  /* min-width: 50%; */
   margin-bottom: -8px;
   display: flex;
 }
@@ -637,7 +637,7 @@ body {
   font-weight: bold;
   letter-spacing: 0;
   text-align: center;
-  padding-top: 1.0625rem;
+  padding-top: 2.0625rem;
 }
 
 .carousel--hero p {
@@ -683,7 +683,7 @@ body {
     padding-left: 2.5rem;
   }
   .carousel--hero__button {
-    margin: 1rem 2.5rem 0.7rem;
+    margin: 1rem 2.5rem 1rem;
   }
   .carousel--controls {
     right: 0.9375rem;
@@ -709,7 +709,13 @@ body {
   .carousel--hero {
     opacity: 0.9;
     margin-bottom: -0.5rem;
-    padding-top: 6.5rem;
+    padding-top: 1%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .carousel--hero {
+    padding-top: 6%;
   }
 }
 
