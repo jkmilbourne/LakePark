@@ -1,79 +1,116 @@
-// "use strict";
+"use strict";
 
 let slideIndex, slides;
 
 function initGallery() {
   slideIndex = 0;
   slides = document.getElementsByClassName("carsousel-image");
-  console.log(slides[slideIndex]);
-  // slides[0].classList.add("move-left");
-  // slides[1].classList.add("move-left", "inactive");
-  // slides[2].classList.add("move-left");
-  // slides[slideIndex + 1].className.add("move-left");
-  // slides[slideIndex].style.opacity = 1;
 }
 initGallery();
 
-// function plusSlides(n) {
-//   moveSlide(slideIndex + n);
-// }
+function plusSlides(num) {
+  let current, next;
 
-// function moveSlide(n) {
-//   let i;
-//   let current, next;
-//   let moveSlideAnimClass = {
-//     forCurrent: "",
-//     forNext: "",
-//   };
-//   let slideTextAnimClass;
-//   if (n > slideIndex) {
-//     if (n >= slides.length) {
-//       n = 0;
-//     }
-//     moveSlideAnimClass.forCurrent = "moveLeftCurrentSlide";
-//     moveSlideAnimClass.forNext = "moveLeftNextSlide";
-//     slideTextAnimClass = "slideTextFromTop";
-//   } else if (n < slideIndex) {
-//     if (n < 0) {
-//       n = slides.length - 1;
-//     }
-//     moveSlideAnimClass.forCurrent = "moveRightCurrentSlide";
-//     moveSlideAnimClass.forNext = "moveRightPrevSlide";
-//     slideTextAnimClass = "slideTextFromBottom";
-//   }
+  let n = slideIndex + num;
 
-//   if (n != slideIndex) {
-//     next = slides[n];
-//     current = slides[slideIndex];
-//     for (i = 0; i < slides.length; i++) {
-//       slides[i].className = "imageHolder";
-//       slides[i].style.opacity = 0;
-//       dots[i].classList.remove("active");
-//     }
-//     current.classList.add(moveSlideAnimClass.forCurrent);
-//     next.classList.add(moveSlideAnimClass.forNext);
-//     dots[n].classList.add("active");
-//     slideIndex = n;
-//   }
-// }
+  if (n > slideIndex) {
+    if (n >= slides.length) {
+      n = 0;
+    }
+  } else if (n < slideIndex) {
+    if (n < 0) {
+      n = slides.length - 1;
+    }
+  }
 
-// let timer = null;
+  if (n != slideIndex) {
+    next = slides[n];
+    current = slides[slideIndex];
+    slideIndex = n;
+  }
 
-// function setTimer() {
-//   timer = setInterval(function () {
-//     plusSlides(1);
-//   }, 3000);
-// }
-// // setTimer();
+  if (slideIndex === 0) {
+    slides[0].classList.remove("move100", "move-100");
+    slides[0].classList.add("move0");
+    slides[1].classList.remove("move100", "move-100");
+    slides[1].classList.add("move0");
+    slides[2].classList.remove("move-300", "move-100");
+    slides[2].classList.add("move0");
+    slides[3].classList.remove("move-300", "move-100");
+    slides[3].classList.add("move-400");
+    if (num === 1) {
+      slides[1].classList.remove("inactive");
+      slides[2].classList.add("inactive")
+    } else {
+      slides[0].classList.remove("inactive");
+      slides[3].classList.add("inactive");
+    }
+  } else if (slideIndex === 1) {
+    slides[0].classList.remove("move0", "move200");
+    slides[0].classList.add("move-100");
+    slides[1].classList.remove("move0", "move-200");
+    slides[1].classList.add("move-100");
+    slides[2].classList.remove("move0", "move-200");
+    slides[2].classList.add("move-100");
+    slides[3].classList.remove("move-400", "move-200");
+    slides[3].classList.add("move-100");
+    if (num === 1) {
+      slides[2].classList.remove("inactive");
+      slides[3].classList.add("inactive");
+    } else {
+      slides[1].classList.remove("inactive");
+      slides[0].classList.add("inactive");
+    }
+  } else if (slideIndex === 2) {
+    slides[0].classList.remove("move-100", "move100");
+    slides[0].classList.add("move200");
+    slides[1].classList.remove("move-100", "move100");
+    slides[1].classList.add("move-200");
+    slides[2].classList.remove("move-100", "move-300");
+    slides[2].classList.add("move-200");
+    slides[3].classList.remove("move-100", "move-300");
+    slides[3].classList.add("move-200");
+    if (num === 1) {
+      slides[3].classList.remove("inactive");
+      slides[0].classList.add("inactive");
+    } else {
+      slides[2].classList.remove("inactive");
+      slides[1].classList.add("inactive");
+    }
+  } else if (slideIndex === 3) {
+    slides[0].classList.remove("move200", "move0");
+    slides[0].classList.add("move100");
+    slides[1].classList.remove("move-200", "move0");
+    slides[1].classList.add("move100");
+    slides[2].classList.remove("move-200", "move0");
+    slides[2].classList.add("move-300");
+    slides[3].classList.remove("move-200", "move-400");
+    slides[3].classList.add("move-300");
+    if (num === 1) {
+      slides[0].classList.remove("inactive");
+      slides[1].classList.add("inactive");
+    } else {
+      slides[3].classList.remove("inactive");
+      slides[2].classList.add("inactive");
+    }
+  }
+  console.log(slideIndex);
+}
 
-// function playPauseSlides() {
-//   let playPauseBtn = document.getElementById("playPause");
-//   if (timer == null) {
-//     setTimer();
-//     playPauseBtn.style.backgroundPositionY = "0px";
-//   } else {
-//     clearInterval(timer);
-//     timer = null;
-//     playPauseBtn.style.backgroundPositionY = "-33px";
-//   }
-// }
+let timer = null;
+
+function setTimer() {
+  timer = setInterval(function () {
+    plusSlides(1);
+  }, 4000);
+}
+setTimer();
+
+function playPauseSlides() {
+  if (timer == null) {
+    setTimer();
+  } else {
+    clearInterval(timer);
+    timer = null;
+  }
+}
