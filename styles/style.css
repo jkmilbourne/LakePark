@@ -547,7 +547,7 @@ body {
 .hero--carousel img {
   width: 100%;
   max-width: 66.9375rem;
-  transition: transform 1s ease-out;
+  transition: transform 2s ease;
 }
 
 .inactive {

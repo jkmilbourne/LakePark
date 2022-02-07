@@ -102,7 +102,7 @@ let timer = null;
 function setTimer() {
   timer = setInterval(function () {
     plusSlides(1);
-  }, 4000);
+  }, 5000);
 }
 setTimer();
 
